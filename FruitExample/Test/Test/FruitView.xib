@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carrot" translatesAutoresizingMaskIntoConstraints="NO" id="Z0X-GW-dap">
+                    <rect key="frame" x="20" y="40" width="280" height="170"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="170" id="56G-PX-j3I"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mennyire szeretem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAo-Ht-SIJ">
+                    <rect key="frame" x="20" y="285" width="146" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="146" id="9jZ-SI-teI"/>
+                        <constraint firstAttribute="height" constant="21" id="BMV-sB-Jr8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Milyen gyakran eszem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m3-Er-cYO">
+                    <rect key="frame" x="20" y="363" width="170" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="k0t-3J-9qX"/>
+                        <constraint firstAttribute="width" constant="170" id="z56-nN-Vci"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ib-Ac-431">
+                    <rect key="frame" x="225" y="258" width="75" height="75"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="QVw-XO-SsO"/>
+                        <constraint firstAttribute="width" constant="75" id="tnm-7q-FVH"/>
+                    </constraints>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QFV-1b-GFq">
+                    <rect key="frame" x="20" y="394" width="280" height="75"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="YZf-6Y-VaJ"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tj-CO-RnX">
+                    <rect key="frame" x="118.5" y="494" width="83" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Tc8-69-l4U"/>
+                        <constraint firstAttribute="width" constant="83" id="Vpl-iN-QaX"/>
+                    </constraints>
+                    <state key="normal" title="Megjegyzés"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6m3-Er-cYO" firstAttribute="top" secondItem="rAo-Ht-SIJ" secondAttribute="bottom" constant="57" id="30m-Yj-F7r"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1ib-Ac-431" secondAttribute="trailing" constant="20" id="A1A-zu-6Hd"/>
+                <constraint firstItem="6Tj-CO-RnX" firstAttribute="top" secondItem="QFV-1b-GFq" secondAttribute="bottom" constant="25" id="Fkr-Ev-VEB"/>
+                <constraint firstItem="Z0X-GW-dap" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="GRZ-7N-xF8"/>
+                <constraint firstItem="rAo-Ht-SIJ" firstAttribute="top" secondItem="Z0X-GW-dap" secondAttribute="bottom" constant="75" id="MED-u6-dwA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QFV-1b-GFq" secondAttribute="trailing" constant="20" id="Ngb-eo-MyV"/>
+                <constraint firstItem="QFV-1b-GFq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ULj-lB-EaX"/>
+                <constraint firstItem="rAo-Ht-SIJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Y1K-b0-785"/>
+                <constraint firstItem="6m3-Er-cYO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="cD5-tY-xP7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Z0X-GW-dap" secondAttribute="trailing" constant="20" id="eSz-zi-qNi"/>
+                <constraint firstItem="1ib-Ac-431" firstAttribute="centerY" secondItem="rAo-Ht-SIJ" secondAttribute="centerY" id="h4z-fv-LWJ"/>
+                <constraint firstItem="6Tj-CO-RnX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="iaJ-Mu-mgG"/>
+                <constraint firstItem="QFV-1b-GFq" firstAttribute="top" secondItem="6m3-Er-cYO" secondAttribute="bottom" constant="10" id="sew-HJ-U0E"/>
+                <constraint firstItem="Z0X-GW-dap" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="xsd-vY-VBN"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="carrot" width="512" height="512"/>
+    </resources>
+</document>
